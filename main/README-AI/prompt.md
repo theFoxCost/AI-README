@@ -3,25 +3,25 @@ You are a professional software engineer and technical writer.
 Your task is to generate a complete, high-quality README.md file for a project.
 
 Here’s the project information (fill with actual details):
-- Project Name: HTTPRequests
-- Link: https://github.com/nateprewitt/HTTPRequests
-- Short Description: Basic HTTP request library written in Python for educational purposes 
-- Tech Stack: Python
-- Main Features: This is an attempt at building yet another http library for educational purposes. Any critiques or comments are welcome. I'm using RFC2616 and RFC7230 as the primary guides for this code, and testing it against popular web services (google, amazon, facebook, etc.)
-- Installation Instructions: 
-- Run Commands: fsdf
-- Environment Variables: 45fgdfg45
-- Project Type: Library
-- Usage Examples: from HTTPRequests.request import HttpRequest
-- File Structure: 
-- Screenshots / Demo Link: req = HttpRequest('www.w3c.org')
-- Dependencies: resp = req.get('/Protocols/rfc2616/ref2616.html')
-- License: print resp #This will print response body
-- Installation Requirements: mit
-- Known Issues: dsq
-- Configuration Notes: 
-- API Routes: 
-- High-Level Project Overview: idk i 
+- Project Name: README-AI-CLI
+- Link: https://api.github.com/repos/theFoxCost/AI-README
+- Short Description: this tool made to gerate a README files for ithub repos powerd with AI 
+- Tech Stack: Python And Docker and bash
+- Main Features: really fast and works anywhere thanks to docker containerstion and easy to use jsut run app.sh and lishtweight 
+- Installation Instructions: 1. clone the repo 2. run app.sh and follow the instruction 3. voila you have the README file on main folder
+- Run Commands: bash app.sh and for perromssion run chmod +x app.sh é&& ./app.sh
+- Environment Variables: GROQ_API_KEY=
+- Project Type: CLI tool
+- Usage Examples: (let the ai g,rate this )
+- File Structure: no file structure dont even show that on the readem file)
+- Screenshots / Demo Link: (no pic/demo dont even show that on the readem file)
+- Dependencies: Docker:latest + code editor (to see the file) + python:latest (all of that are in the container dont wrooy)
+- License: no licsence
+- Installation Requirements: dont show that
+- Known Issues: dont show that
+- Configuration Notes: dont show that
+- API Routes: dont show that
+- High-Level Project Overview: (lt ai genrate this)
 
 **Requirements for the README:**
 1. Start with the Project Name as a title (`# Project Name`) and link.
