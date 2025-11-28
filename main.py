@@ -5,12 +5,10 @@ import payload
 import time
 import Post as post
 
-# Step 1: Make project structure first
-files.make_structure()  # must run first to set path
-fetch.auth()            # ask for repo URL and fetch data
-form_data = f.get_info()  # collect all form data from user
+files.make_structure()
+fetch.auth()
+form_data = f.get_info()
 
-# Step 2: Generate README prompt
 def generate_prompt_file(form_data):
     prompt = f"""
 You are a professional software engineer and technical writer. 
@@ -56,22 +54,24 @@ Here’s the project information (fill with actual details):
 
 Return ONLY the fully formatted README Markdown content.
 """
-
     prompt_file = "prompt.md"
     with open(prompt_file, "w", encoding="utf-8", errors="replace") as f:
         f.write(prompt)
-    
-    time.sleep(1)
     print(f"✅ Generated the prompt file: {prompt_file}")
     return prompt_file
 
-# Step 3: Generate the prompt file
+
+start_time = time.perf_counter()
+
 generate_prompt_file(form_data)
 
-# Step 4: Create payload.md
 payload_data = payload.the_data()
 
-# Step 5: Send payload to Groq and save README
 result = post.send_to_groq(payload_data)
 
+end_time = time.perf_counter()
+elapsed = round(end_time - start_time, 2)
+
+print(f"⏱ Total processing time: {elapsed} seconds")
 print("✅ Done!")
+print("WARNING:⚠️ It Is recommended to edit your README.md file manually.")

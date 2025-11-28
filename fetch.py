@@ -5,7 +5,7 @@ import os
 import json
 
 def fetch_repo_data():
-    repo_url = input("Enter Your (PUBLIC) Repo URL (no strings): ")
+    repo_url = input("Enter Your (PUBLIC) Repo URL (no strings) (https://api.github.com/repos/user_name/repo_name): ")
     time.sleep(2)
     response = requests.get(repo_url, timeout=5)
     response.raise_for_status()

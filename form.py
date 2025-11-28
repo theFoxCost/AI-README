@@ -2,8 +2,8 @@ import time
 
 def get_info():
     pro_name = input("Enter Project Name: ")
+    link = input("Enter Project Link : ")
     time.sleep(0.5)
-    link = input("Enter Project Link: ")
     time.sleep(0.5)
     desc = input("Enter Short Description: ")
     time.sleep(0.5)
