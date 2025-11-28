@@ -18,6 +18,9 @@ def write_content():
 
 def make_structure():   
     pro_repo = input("Enter the Project Name: ") 
+    if os.path.exists(pro_repo):
+        print("⚠️Directory already exists!")
+        exit()
     path = f"./main/{pro_repo}"
     os.makedirs(path)
     print("Created ", path)
