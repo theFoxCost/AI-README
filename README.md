@@ -1,50 +1,49 @@
-# AI-README-CLI
-[![GitHub](https://img.shields.io/badge/GitHub-theFoxCost/AI--README--CLI-ff69b4.svg)](https://github.com/theFoxCost/AI-README-CLI)
+# README-AI-CLI
+[README-AI-CLI](https://api.github.com/repos/theFoxCost/AI-README)
 
 ## Description
-AI-README-CLI is a CLI-tool designed to generate high-quality, AI-generated README files with ease. This project aims to provide a simple and efficient way to create professional README files, saving developers time and effort.
+The README-AI-CLI is a tool designed to generate high-quality README files for GitHub repositories, powered by AI. This innovative solution aims to simplify the process of creating well-structured and informative README files, saving developers time and effort. With its lightweight and easy-to-use design, the README-AI-CLI is an ideal solution for anyone looking to improve their repository's documentation.
 
 ## Tech Stack and Main Features
 * Tech Stack:
-	+ Python
+  + Python
+  + Docker
+  + Bash
 * Main Features:
-	+ Speed: Generate README files quickly and efficiently
-	+ Free: Completely free to use
-	+ Easy to use: Simple and intuitive interface
+  + Really fast and works anywhere thanks to Docker containerization
+  + Easy to use: just run `app.sh` and follow the instructions
+  + Lightweight
 
 ## Installation Instructions
-To install AI-README-CLI, follow these steps:
+To get started with the README-AI-CLI, follow these simple steps:
 ```bash
-# Install dependencies
-pip install requests==2.32.5
-
 # Clone the repository
-git clone https://github.com/theFoxCost/AI-README-CLI.git
+git clone https://github.com/theFoxCost/AI-README.git
 
-# Navigate to the project directory
-cd AI-README-CLI
-
-# Install the project using pip
-pip install .
+# Run the app.sh script
+bash app.sh
 ```
+Follow the instructions provided by the script to complete the installation.
 
 ## Run Commands
-To run AI-README-CLI, use the following command:
+To run the README-AI-CLI, use the following commands:
 ```bash
-python main.py
+# Give execute permission to the app.sh script
+chmod +x app.sh
+
+# Run the app.sh script
+./app.sh
 ```
 
 ## Environment Variables
-To use AI-README-CLI, you need to set the following environment variable:
-```bash
-GROQ_API_KEY=API_KEY
-```
-Replace `API_KEY` with your actual API key.
+The README-AI-CLI uses the following environment variable:
+* `GROQ_API_KEY`: (required for API interactions)
 
 ## Project Type
-AI-README-CLI is a CLI tool.
+The README-AI-CLI is a Command-Line Interface (CLI) tool designed to generate README files for GitHub repositories.
 
 ## Usage Examples
+<<<<<<< HEAD
 Here are some examples of how to use AI-README-CLI:
 * Generate a basic README file:
 ```bash
@@ -74,31 +73,21 @@ The `templates` directory contains the different templates that can be used to g
 
 ## Screenshots / Demo Link
 [![Demo](https://img.shields.io/badge/Demo-AI--README--CLI-ff69b4.svg)](https://github.com/theFoxCost/AI-README-CLI)
+=======
+Let the AI generate a README file for your repository. Simply run the `app.sh` script and follow the instructions to create a high-quality README file.
+>>>>>>> cd2c24e (Added: Docker containerisation for the App and add Bash Script for automation)
 
 ## Dependencies
-AI-README-CLI depends on the following libraries:
-* `requests==2.32.5`
+The README-AI-CLI relies on the following dependencies:
+* Docker:latest
+* Code editor (to view the generated README file)
+* Python:latest (included in the Docker container)
 
 ## License
-AI-README-CLI is licensed under the MIT License.
-
-## Installation Requirements
-To install AI-README-CLI, you need to have the following installed:
-* Python
-* pip
-* uv
-* venv
-
-## Known Issues
-There are no known issues with AI-README-CLI.
-
-## Configuration Notes
-There are no configuration notes for AI-README-CLI.
-
-## API Routes
-There are no API routes for AI-README-CLI.
+The README-AI-CLI is released without a license.
 
 ## High-Level Project Overview
+<<<<<<< HEAD
 The high-level project overview of AI-README-CLI is as follows:
 1. The user installs AI-README-CLI using pip.
 2. The user sets the `GROQ_API_KEY` environment variable.
@@ -106,3 +95,6 @@ The high-level project overview of AI-README-CLI is as follows:
 4. AI-README-CLI generates a README file based on the user's input.
 5. The user can customize the README file using different templates and options.
 ### **WARNING: you may Still modify the README File**
+=======
+The README-AI-CLI uses a combination of natural language processing (NLP) and machine learning algorithms to generate high-quality README files. The tool is designed to be easy to use and provides a simple, intuitive interface for users to input their repository information and generate a README file. The generated README file includes all the necessary sections and content to provide a comprehensive overview of the repository.
+>>>>>>> cd2c24e (Added: Docker containerisation for the App and add Bash Script for automation)

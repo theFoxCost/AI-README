@@ -6,15 +6,15 @@ data_content = 'Data'
 
 
 def write_content():
-    file = "README"
+    file = "README.md"
     with open(file, "w") as f:
         f.write(f"{content}\n")
     print(f"Created {file}")
 
-    data_file = "payload.md"
-    with open(data_file, "w") as f:
-        f.write(f"{data_content}\n")
-    print(f"Created {data_file}")
+    # data_file = "payload.md"
+    # with open(data_file, "w") as f:
+    #     f.write(f"{data_content}\n")
+    # print(f"Created {data_file}")
 
 def make_structure():   
     pro_repo = input("Enter the Project Name: ") 
