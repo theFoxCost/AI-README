@@ -61,9 +61,13 @@ The file structure of AI-README-CLI is as follows:
 ```markdown
 AI-README-CLI/
 |-- main.py
-|-- templates/
-|   |-- basic.py
-|   |-- ...
+|-- main/
+|   |-- {project_name}/
+|   	|-- README.md	<-- the main (genrated by ai) file
+|   	|-- Payload.md	<-- all info that sends to the GROQ API
+|   	|-- Prompt.md	<-- my prompt (you can customise it make t much better)
+|   	|-- github.json	<-- your github repo DATA is fetched and stored here  
+
 |-- ...
 ```
 The `templates` directory contains the different templates that can be used to generate README files.
@@ -101,3 +105,4 @@ The high-level project overview of AI-README-CLI is as follows:
 3. The user runs AI-README-CLI using the `python main.py` command.
 4. AI-README-CLI generates a README file based on the user's input.
 5. The user can customize the README file using different templates and options.
+### **WARNING: you may Still modify the README File**
