@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Welcome To My the AI README Generator"
+echo "Welcome To AI README Generator"
 sleep 1
 
 echo "Building the Docker Image..."

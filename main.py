@@ -58,7 +58,7 @@ Return ONLY the fully formatted README Markdown content.
 """
 
     prompt_file = "prompt.md"
-    with open(prompt_file, "w", encoding="utf-8") as f:
+    with open(prompt_file, "w", encoding="utf-8", errors="replace") as f:
         f.write(prompt)
     
     time.sleep(1)
