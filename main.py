@@ -5,6 +5,7 @@ import payload
 import time
 import Post as post
 
+print("If you wanted to let ai Auto-Generate Certain Info just place: [ai-auto-generate] in the form field")
 files.make_structure()
 fetch.auth()
 form_data = f.get_info()
